@@ -1,0 +1,33 @@
+sudo docker start postgresql-container
+
+sudo docker exec -it postgresql-container psql -U postgres  -W postgres
+
+sudo docker exec -it postgresql-container psql -U postgres  -W Store
+
+CREATE TABLE [IF NOT EXISTS] users (
+  name string,
+ age numbe
+);
+
+
+
+
+
+
+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
+
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJmYXlyb3V6X2FsaSIsImlhdCI6MTY0MjEzMTU0NiwiZXhwIjoxNjQyMTM4NzQ2fQ.8MR2OYZtx9OzfBNgpgfl1k699iB1QznFuT-pFt17i1A
+
+
+
+Iam 
+
+Access key ID
+
+export AWS_ACCESS_KEY_ID=AKIAWU7PH252EGRP2XCO
+
+
+Secret access key
+export AWS_SECRET_ACCESS_KEY=/uZSuKMlnKXXd4wsGJZuKWpEAlGh0gY+nnmbDfWw
