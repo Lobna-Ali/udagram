@@ -1,0 +1,49 @@
+# This config is equivalent to both the '.circleci/extended/orb-free.yml' and the base '.circleci/config.yml'
+version: 2.1
+
+# Orbs are reusable packages of CircleCI configuration that you may share across projects, enabling you to create encapsulated, parameterized commands, jobs, and executors that can be used across multiple projects.
+# See: https://circleci.com/docs/2.0/orb-intro/
+orbs:
+  node: circleci/node@4.7
+  aws-cli: circleci/aws-cli@1.3.1
+
+# Invoke jobs via workflows
+# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
+workflows:
+  udagramCI: # Inside the workflow, you define the jobs you want to run.
+   jobs:
+    build:
+      docker:
+        - image: "cimg/base:stable"
+      steps:
+        - node/install
+        - checkout
+        - aws-cli/setup
+        - run:
+            name: Front-End Install
+            command: |
+              npm run frontend:install
+        - run:
+            name: Back-End Install
+            command: |
+              npm run backend:install
+        - run:
+            name: Front-End Build
+            command: |
+              npm run frontend:build
+        - run:
+            name: Front-End test
+            command: |
+              npm run frontend:test             
+        - run:
+            name: Back-End Build
+            command: |
+              npm run backend:build
+        - run:
+            name: Back-End test
+            command: |
+              npm run backend:test
+        - run:
+            name: Deploy App
+            command: |
+              npm run frontend:deploy

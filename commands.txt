@@ -29,3 +29,5 @@ export AWS_ACCESS_KEY_ID=AKIAWU7PH252EGRP2XCO
 
 Secret access key
 export AWS_SECRET_ACCESS_KEY=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
+
+aws s3 cp --recursive --acl public-read ./www s3://udacityud
