@@ -9,7 +9,7 @@
     "build": "ng build",
     "prodBuild": "ng build --prod",
     "test": "ng test",
-    "testCI": "ng test --no-watch --no-progress --browsers=ChromeHeadlessCI",
+    "testCI": "ng test --watch=false --browsers=ChromeHeadless",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "deploy": "chmod +x bin/deploy.sh && bin/deploy.sh"
