@@ -34,7 +34,7 @@ workflows:
         - run:
             name: Front-End test
             command: |
-              npm run frontend:test             
+              npm run frontend:test
         - run:
             name: Back-End Build
             command: |
