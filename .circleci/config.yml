@@ -21,29 +21,29 @@ workflows:
         - aws-cli/setup
         - run:
             name: Front-End Install
-            command: |
-              npm run frontend:install
+                command: |
+                  npm run frontend:install
         - run:
             name: Back-End Install
-            command: |
-              npm run backend:install
+                command: |
+                  npm run backend:install
         - run:
             name: Back-End Build
-            command: |
-              npm run backend:build
+                command: |
+                  npm run backend:build
     test:
         steps:
           - run:
               name: Back-End test
-              command: |
-                npm run backend:test
+                  command: |
+                    npm run backend:test
           - run:
               name: front-End test
-              command: |
-                npm run frontend:test
+                  command: |
+                    npm run frontend:test
     deploy:
         steps:
           - run:
               name: Deploy App
-              command: |
-                npm run frontend:deploy
+                  command: |
+                    npm run frontend:deploy
