@@ -33,17 +33,17 @@ workflows:
               npm run backend:build
     test:
         steps:
-        - run:
-            name: Back-End test
-            command: |
-              npm run backend:test
-        - run:
-            name: front-End test
-            command: |
-              npm run frontend:test
+          - run:
+              name: Back-End test
+              command: |
+                npm run backend:test
+          - run:
+              name: front-End test
+              command: |
+                npm run frontend:test
     deploy:
         steps:
-        - run:
-            name: Deploy App
-            command: |
-              npm run frontend:deploy
+          - run:
+              name: Deploy App
+              command: |
+                npm run frontend:deploy
