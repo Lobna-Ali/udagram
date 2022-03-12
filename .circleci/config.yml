@@ -10,7 +10,6 @@ jobs:
           - main
     docker:
       - image: "cimg/base:stable"
-      -image: 
     steps:
       - node/install
       - checkout
