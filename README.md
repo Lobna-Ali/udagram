@@ -1,6 +1,11 @@
 # Udagram
 
 This application is provided to you as an alternative starter project if you do not wish to host your own code done in the previous courses of this nanodegree. The udagram application is a fairly simple application that includes all the major components of a Full-Stack web application.
+### Application link
+please use this link to access the website [Link](http://udacityud.s3-website-us-east-1.amazonaws.com)
+
+### Circle CI status
+[![Build Status](https://img.shields.io/travis/thephpleague/pipeline/master.svg?style=flat-square)](https://app.circleci.com/pipelines/github/Lobna-Ali/udagram)
 
 ## Getting Started
 
