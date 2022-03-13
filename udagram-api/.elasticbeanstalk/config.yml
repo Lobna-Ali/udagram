@@ -3,7 +3,6 @@ branch-defaults:
     environment: Udagramapi-env
 deploy:
   artifact: www/Archive.zip
-version: 2.1
 global:
   application_name: udagram-api
   branch: null
